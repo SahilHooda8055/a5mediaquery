@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a4mediaquery</title>
+    <style>
+*{
+    margin: 2px;
+    background-color: rgb(32, 4, 38);
+   
+}
+.list{
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    color: white;
+    gap: 10px;
+font-weight: 500;
+    
+}
+.home{
+    border: solid  rgb(125, 11, 125) ;
+    background-color: rgb(125, 11, 125);
+    border-radius: 10px;
+}
+.navigation{
+    background-color: black;
+   
+}
+.line1{
+    display: flex;
+    font-weight: 700;
+    color: white;
+}
+.name{
+    font-size: 35px;
+    color: white;
+    font-weight: 700;
+    margin: -10px 0 -10px 0;
+   
+}
+.post{
+    color: yellow;
+    font-weight: 400;
+    
+}
+
+.pcimage{
+    height: 300px;
+}
+.upperpart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.projects{
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom:10px ;
+   text-decoration: underline blue 3px;
+   
+}
+.image{
+    height: 200px;
+   
+   
+}
+.img{
+   row-gap: 100px;
+   column-gap: 100px;
+   text-align: center;
+   margin: 20px;
+       
+}
+.image2{
+    display: flex;
+    justify-content: center;
+}
+h4{
+    color: white;
+
+}
+.contactme{
+    color: white;
+    text-decoration:  underline 3px blue;
+   gap: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+.social{
+    height: 50px;
+   
+    text-align: center;
+
+}
+.hamburger{
+        display: block;
+      /* text-align: left; */
+     
+    }
+@media screen and (min-width:577px){
+    .hamburger{
+        display: none;
+    }
+} 
+@media screen and (max-width:576px){
+    .navigation{
+        display: none;
+        
+    }
+    .hamburger{
+        display: block;
+        /* justify-content: start; */
+    }
+    .upperpart{
+        display: inline;
+        margin:auto;
+        justify-content: center;
+        text-align: center;
+    }
+    .line1{
+        display: inline;
+    }
+   
+    .name{
+        font-size: 30px;
+   
+       
+    }
+    .post{
+        margin-top: 20px;
+       
+    }
+    .image2{
+        display: inline;
+    }
+   
+        
+    .image{
+        height: 70px;
+        /* margin: 20px; */
+        
+    }
+    .main{
+        justify-content: center;
+        align-items: center;
+    }
+    .pcimage{
+        height: 150px;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .projects{
+       
+        font-size: 20px;
+       
+    }
+    .contactme{
+        justify-content: center;
+        
+        font-size: 20px;
+    }
+  
+
+   
+}
+    </style>
+</head>
+<body>
+<div class="navigation">
+  
+    <ul class="list">
+        <img class="hamburger" src="/10feb assets/hambrger.png" alt="img" width="20px">
+        <li class="home" >Home</li>
+        <li  >Projects</li>
+        <li  >Technologies</li>
+        <li  >contact</li>
+    
+    </ul>
+
+</div>
+<section class="upperpart">
+    <main class="upperleft">
+    <div class="line1">
+       <p > <img class="waveimg" src="/10feb assets/waving-hand.png" alt="wave img" height="20px" > </p>
+   
+       <p class="hi"> Hi Everyone </p>
+      
+    </div>
+    <div>
+        <p class="name">Mark Anderson</p>
+        <p class="post"> Developer</p>
+    </div>
+    </main>
+
+<main class="main">
+    <img class="pcimage" src="/10feb assets/pc-image.png" alt="pcimage">
+</main>
+</section>
+<h2 class="projects">Projects</h2>
+<section class="image2">
+    <main class="img">
+        <img class="image" src="/10feb assets/image.png" alt="image">
+        <h4>Project 1</h4>
+        <img class="image" src="/10feb assets/image.png" alt="image">
+        <h4>Project 2</h4>
+    </main>
+
+    <main class="img">
+        <img class="image" src="/10feb assets/image.png" alt="image">
+        <h4>Project 3</h4>
+        <img class="image" src="/10feb assets/image.png" alt="image">
+        <h4>Project 4</h4>
+    </main>
+
+</section>
+<h2 class="contactme">Contact Me</h2>
+<section class="social"> 
+    <img src="/10feb assets/github.png" alt="img" height="25px">
+    <img src="/10feb assets/linkedin.png" alt="img" height="25px">
+    <img src="/10feb assets/outlook.png" alt="img" height="25px">
+  
+</section>
+</body>
+</html>
